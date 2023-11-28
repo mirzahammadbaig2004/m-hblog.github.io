@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js">
+
+    </script>
+    <style>
+        .inpt:focus {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+
+        .srch_inpt:focus {
+            box-shadow: 0px 1px 4px 0px white
+        }
+    </style>
+    <title>About</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="javascript:void(0)">H&M BLOGS</a> -->
+            <a class="navbar-brand" href="javascript:void(0)"><span style="color:white">H</span><span
+                    style="color:rgb(161, 153, 153)">&</span><span style="color:white">M</span> BLOGS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                
+                    <div class="d-flex">
+                    <input class="form-control me-2 srch_inpt" type="text" placeholder="Search">
+                    <button class="btn btn-outline-light opacity-75" type="button">Search</button>
+                    <button class="btn btn-danger mx-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger mx-1" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+
+                </div>
+            </div>
+            
+        </div>
+
+
+    </nav>
+    <!-- LOGINModal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="border-light p-5 text-center">
+
+                        <p class="h4 mb-4 text-center">LOGIN PAGE</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control inpt" placeholder="Email" aria-label="Email"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">....</span>
+                            <input type="text" class="form-control inpt" placeholder="Password" aria-label="Password"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+
+
+                        <button class="btn btn-dark btn-md mt-5 " type="submit">Login</button>
+
+                        <div class="text-center mt-3">
+                            <p>Not a member?
+                                <a href="">Sign up</a>
+                            </p>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SIGN UP Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModal"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h3 class="text-center mb-3">SIGNUP</h3>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control inpt" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control inpt" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="form-floating ">
+                        <input type="password" class="form-control inpt" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Confirm Password</label>
+                    </div>
+                </div>
+                <div class="btn text-center mt-3">
+                    <button type="submit" class="btn btn-dark mb-2">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="container">
+        <div class="row featurette mt-5 d-flex justify-content-center align-items-center">
+            <div class="offset-md-1 col-md-5">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="offset-md-1 col-md-5 ">
+                <img class="img-fluid" src="assets/images/about1.jpg" width="400px" height="450px">
+            </div>
+        </div>
+        <div class="row featurette mt-5 d-flex justify-content-center align-items-center">
+            <div class="col-md-5 order-md-2">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class=" col-md-5 order-md-1">
+                <img class="img-fluid" src="assets/images/about2.jpeg" width="400px" height="450px">
+            </div>
+        </div>
+        <div class="row featurette mt-5 d-flex justify-content-center align-items-center">
+            <div class="offset-md-1 col-md-5">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="offset-md-1 col-md-5 ">
+                <img class="img-fluid" src="assets/images/about3.jpeg" width="400px" height="450px">
+            </div>
+        </div>
+        <div class="row featurette mt-5 d-flex justify-content-center align-items-center">
+            <div class="col-md-5 order-md-2">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="assets/images/about4.jpg" width="400px" height="450px">
+            </div>
+        </div>
+        <div class="row featurette mt-5 d-flex justify-content-center align-items-center">
+            <div class="offset-md-1 col-md-5">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="offset-md-1 col-md-5 ">
+                <img class="img-fluid" src="assets/images/about2.jpeg" width="400px" height="200px">
+            </div>
+        </div>
+        <div class="row featurette mt-5 d-flex justify-content-center align-items-center">
+            <div class="col-md-5 order-md-2">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="assets/images/about6.jpeg" width="400px" height="450px">
+            </div>
+        </div>
+
+    </div>
+    <!-- <footer> -->
+    <footer class="container mt-5">
+
+
+        <p class="float-end ">
+            <a href="#">Back to top</a>
+        </p>
+        <p class="float-start">
+            © 2023–2024 Company, Inc.
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
